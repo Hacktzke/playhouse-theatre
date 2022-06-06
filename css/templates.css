@@ -1,0 +1,163 @@
+* {
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.a-btn-small {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    font-size: 14px;
+    padding: 4px;
+    margin: 10px;
+    letter-spacing: .1rem;
+    transition: all .2s
+  }
+  
+.a-btn-small:hover {
+    padding: 10px;
+    margin: 4px;
+}
+
+.border-r{
+  border-right: 1px solid white;
+} 
+
+.border-l{
+  border-left: 1px solid white;
+} 
+
+.red {
+  color: red;
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+.black {
+    color: black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+ /* Footer Area */
+
+ footer {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+footer .logo a {
+  text-decoration: none;
+}
+
+footer .title {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid white;
+  padding: 20px;
+  margin-top: -100px;
+  font-weight: 300;
+  color: white;
+  font-size: 2.5rem;
+  background-color: black;
+}
+
+footer .left-links {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+footer .left-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+footer .social-links {
+  width: 400px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+footer .social-links i {
+  padding: 0 1rem;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+
+  /* NAVBAR */
+
+  #navbar a {
+    font-size: .9rem;
+  }
+
+   /* FOOTER AREA */
+
+   footer .left-links {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+   /* FOOTER AREA */
+
+   footer .left-links {
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  footer .left-links a {
+    margin-bottom: .5rem;
+  }
+
+  footer .social-links {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  /* FOOTER */
+
+  footer {
+    height: auto;
+    flex-direction: column;
+  }
+
+  footer .left-links {
+    margin: 2rem 0;
+  }
+
+  footer .social-links {
+    margin: 3rem 0;
+  }
+  footer .title {
+    margin-top: 0;
+  }
+
+}

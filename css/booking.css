@@ -1,0 +1,399 @@
+/* Navbar */
+
+.second-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    z-index: 1;
+  }
+    
+  .second-nav-content {
+    display: flex;
+    height: inherit;
+  }
+    
+  .second-nav nav {
+    display: flex;
+    align-items: center;
+  }
+  .second-nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+    
+  .second-nav a {
+    text-decoration: none;
+  }
+    
+  .second-nav .second-title {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px 15px 0 25px;
+    font-weight: 300;
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    overflow: visible;
+  }
+   
+  /* Main Area */
+
+  main {
+      position: relative;
+  }
+
+  /* Form Area */
+
+
+
+.booking-area {   
+    width: 750px;
+    background-color: #f4f4f4;
+    margin: 100px auto 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-area img {
+    width: 100%;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem 0 1rem;
+}
+
+.form-group select {
+    font-size: 1.25rem;
+    padding: .2rem;
+    width: 100%;
+}
+
+
+.form-group select {
+    text-align: center;
+}
+
+.ticket-btns {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 20px;
+    font-size: 1.25rem;
+}
+
+.ticket-btns span {
+    font-size: 1.5rem;
+}
+
+.btn-selector {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-selector input {
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+}
+
+.btn-selector span {
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+.total-area {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 50px;
+    margin: 30px 0;
+    padding: 0 50px 0 20px;
+}
+
+
+
+
+  /* Seating Grid */
+
+  .seating-box {
+      max-width: 600px;
+      height: auto;
+      border: 3px solid black;
+      border-radius: 2px;
+      background-color: lightgray;
+  }
+
+.cinema-screen {
+    background-color: red;
+    height: 30px;
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+.seating-grid {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+
+.seat-row {
+    display: flex;
+}
+
+.seating-grid .seat {
+    width: 30px;
+    height: 30px;
+    margin: 15px 5px;
+    font-size: 14px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.seating-grid .seat:hover {
+    background-color: rgb(175, 250, 255);
+    transform: scale(1.5);
+    box-shadow: 0 0 5px grey;
+}
+
+#choose-seat-request-num {
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+/* SUBMIT INPUT */
+
+#submit-area {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 15px;
+}
+
+#submit-btn {
+    background-color: inherit;
+    color: red;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+    font-size: 1.2rem;
+    padding: 4px;
+    margin: 10px;
+    letter-spacing: .1rem;
+    transition: all .1s
+}
+
+#submit-btn:hover {
+    padding: 10px;
+    margin: 4px;
+}
+
+#error-msg {
+    height: 30px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: red;
+
+}
+/* CHECKOUT AREA */
+
+#checkout {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    min-height: 400px;
+    padding: 2rem 5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    z-index: 10;
+}
+
+#checkout h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+}
+
+.checkout-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 2rem;
+
+}
+
+.checkout-btn-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.checkout-btn {
+    background-color: white;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 20px;
+    padding: 4px;
+    margin: 10px;
+    letter-spacing: .1rem;
+  }
+  
+.checkout-btn:hover {
+    padding: 10px;
+    margin: 4px;
+}
+
+.cancel-btn {
+    color: red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+}
+
+/* OVERLAY FOR CHECKOUT */
+
+.overlay {
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: .3s;
+}
+
+@media screen and (max-width: 1024px) {
+    .second-nav a {
+      font-size: .9rem;
+    }
+  
+}
+  
+
+@media screen and (max-width: 768px) {
+
+     /* SECOND NAVBAR */
+
+  .second-nav .second-title {
+    font-size: 20px;
+    width: 90px;
+    height: 90px;
+    margin: 10px 5px 0 10px;
+  }
+
+  .second-nav a {
+    font-size: 10px;
+  }
+
+    .booking-area {
+        width: 100%;
+    }
+    .booking-area form {
+        width: 90%;   
+    }
+
+    .seating-grid .seat {
+        width: 25px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    #checkout {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* SECOND NAVBAR */
+
+  .second-nav-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .second-nav .second-title {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  .second-nav a {
+    margin: 0 5px;
+  }
+
+  .seating-grid .seat {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin: 1rem 0.2rem;
+  }
+
+  /* CHECKOUT */
+
+  #checkout {
+      width: 90%;
+  }
+
+  #checkout h3 {
+      font-size: 1.3rem;
+  }
+
+  #checkout h4 {
+      font-size: 1.3rem;
+  }
+
+}
+
+  

@@ -1,0 +1,102 @@
+.Facility {
+    background:white;
+    margin: 5rem 0 15rem ;
+    padding: 20px;
+    border: 10px solid #ebebeb;
+    height: 275px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.Facility .facility-img {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+    transition: all .3s;
+    box-shadow: 0 0 10px grey;
+}
+
+.Facility .facility-img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px grey;
+}
+.Facility .intro {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.Facility .title {
+    font-size: 2.5rem;
+    margin: 5px 0 10px;
+}
+
+.Facility .date {
+    font-style: italic;
+}
+
+.Facility .descrip {
+    font-size: 1.4rem;
+    margin: 10px 0 20px;
+}
+
+.Facility .a-btn-small {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    font-size: 1.25rem;
+    padding: 4px;
+    margin: 10px;
+    letter-spacing: .1rem;
+    transition: all .2s
+  }
+  
+.Facility .a-btn-small:hover {
+    padding: 10px;
+    margin: 4px;
+}
+
+.Facility .ticket-btn {
+    color: red;
+    border-bottom: 1px solid red;
+    border-left: 1px solid red;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .Facility {
+        margin: 5rem 0 10rem;
+        height: auto;
+    }
+    .Facility .facility-img {
+        width: 200px;
+    }
+    .Facility .descrip {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Facility {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Facility .facility-img {
+        margin-right: 0;
+        float: none;
+    }
+
+    .Facility .intro {
+        margin-top: .5rem;
+    }
+
+    .Facility .descrip {
+        width: 80%;
+        margin: 2rem auto;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}

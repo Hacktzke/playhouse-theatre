@@ -1,0 +1,12 @@
+.Showing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .Showing {
+        flex-direction: column;
+    }
+}

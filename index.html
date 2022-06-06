@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Offical website for the Playhouse Theatre">
+    <meta name="keywords" content="Playhouse Theatre Musical">
+    <meta name="author" content="Jeshua Hertzke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9fdc6884ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/templates.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/showing.css" />
+    <link rel="stylesheet" href="./css/facility.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <!-- Add meta data -->
+    <title>IT5039 - Project</title>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a class="a-btn-small border-r" href="./booking.html"
+              >Book Tickets</a
+            >
+          </li>
+          <li>
+            <a class="a-btn-small border-r" href="#showing">What's On</a>
+          </li>
+          <li>
+            <a class="a-btn-small border-r" href="./about.html">About</a>
+          </li>
+          <li>
+            <a class="a-btn-small border-r" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">
+        <span>Play</span><span>house</span><span>Theatre</span>
+      </h1>
+      <div class="my-slides fade">
+        <img src="./images/ballet-banner-2500px.jpg" />
+        <p class="quote">
+          <q>"Amazingly captivating! A real tear jerker..."</q><br>- The Herald
+        </p>
+        <div class="text hide">
+          <h2>Les Misérables - Claude-Michel Schönberg</h2>
+          <div class="subheading">
+            <h3>April 8 <sup>th</sup> - June 5<sup>th</sup></h3>
+            <h3>Tickets on sale now!</h3>
+          </div>
+          <a class="a-btn-small border-l" href="./les-mis.html">More Info</a>
+        </div>
+      </div>
+      <div class="my-slides fade">
+        <img src="./images/shakespeare-banner-2500px.jpg" />
+        <p class="quote">
+          <q>"Intense and dark, true to its original..."</q><br>- Stuff.co.nz
+        </p>
+        <div class="text hide">
+          <h2>Hamlet - Shakespeare</h2>
+          <div class="subheading">
+            <h3>April 21 <sup>st</sup> - July 16<sup>th</sup></h3>
+            <h3>Tickets on sale now!</h3>
+          </div>
+          <a class="a-btn-small border-l" href="./hamlet.html">More Info</a>
+        </div>
+      </div>
+      <div class="my-slides fade">
+        <img src="./images/dance-banner-2500px.jpg" />
+        <p class="quote">
+          <q>"A crowd pleaser! Gets you off your feet..."</q><br>- Radio NZ
+        </p>
+        <div class="text hide">
+          <h2>Shall We Dance - The King And I</h2>
+          <div class="subheading">
+            <h3>May 6<sup>th</sup> - August 14<sup>th</sup></h3>
+            <h3>Tickets on sale now!</h3>
+          </div>
+          <a class="a-btn-small border-l" href="./shall-we-dance.html"
+            >More Info</a
+          >
+        </div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <main id="content">
+      <div class="second-nav">
+        <div class="second-nav-content">
+          <div class="logo-area">
+            <a href="#">
+              <h1 class="second-title">
+                <span>Play</span><span>house</span><span>Theatre</span>
+              </h1>
+            </a>
+          </div>
+          <nav>
+            <div class="center-area">
+              <ul>
+                <li>
+                  <a class="a-btn-small border-l" aria-label="Book Tickets here" href="./booking.html"
+                    >Book Tickets</a
+                  >
+                </li>
+                <li>
+                  <a class="a-btn-small border-l" href="#showing">What's On</a>
+                </li>
+                <li>
+                  <a class="a-btn-small border-l" href="./about.html">About</a>
+                </li>
+                <li>
+                  <a class="a-btn-small border-l" href="./contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <section class="showing" id="showing">
+        <h2 class="section-title">What's on at the Playhouse</h2>
+        <div id="root"></div>
+      </section>
+      <div id="countdown-banner">
+        <h2>
+          The <span class="lion-king-span">Lion King Musical</span>is here in:
+          <span id="countdown-time"></span>
+          <a class="a-btn-small border-l red" href="./booking.html"
+            >Prebook tickets now</a
+          >
+        </h2>
+      </div>
+      <section class="services">
+        <h2 class="section-title">Endulge at the Playhouse</h2>
+        <div id="root2"></div>
+      </section>
+      <!-- SUBSCRIBE DELAYED SECTION -->
+      <section id="subscribe" class="hide">
+        <button id="exit-subscribe" aria-label="close">&#x2715</button>
+        <h2>Get the latest news and offers through our royalty Playhouse subscription. Discounts and presales get emailed weekly.</h2>
+        <form action="./index.html">
+          <div class="input-area">
+            <div class="details-div">
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="Your name" required/>
+            </div>
+            <div class="details-div">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                placeholder="Your email"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" id="subscribe-btn">Subscribe</button>
+        </form>
+      </section>
+      <div id="overlay"></div>
+    </main>
+    <footer>
+      <div class="left-links">
+        <a href="https://www.whitecliffe.ac.nz/privacy-policy" target="_blank">Privacy Policy</a>
+        <h4>&copy; J.Hertzke - 20210843</h4>
+      </div>
+      <div class="logo">
+        <a href="#">
+          <h2 class="title">
+            <span>Play</span><span>house</span><span>Theatre</span>
+          </h2>
+        </a>
+      </div>
+      <div class="social-links">
+        <a href="https://facebook.com" target="blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://instagram.com" target="blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://pinterest.nz" target="blank"
+          ><i class="fa-brands fa-pinterest"></i
+        ></a>
+      </div>
+    </footer>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script src="./js/card.js" type="text/jsx"></script>
+    <script src="./js/showing.js" type="text/jsx"></script>
+    <script src="./js/app.js" type="text/jsx"></script>
+    <script src="./js/facility.js" type="text/jsx"></script>
+    <script src="./js/services.js" type="text/jsx"></script>
+    <script src="./js/app2.js" type="text/jsx"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

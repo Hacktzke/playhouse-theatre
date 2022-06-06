@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Offical website for the Playhouse Theatre">
+    <meta name="keywords" content="Playhouse Theatre Musical">
+    <meta name="author" content="Jeshua Hertzke">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9fdc6884ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/templates.css" />
+    <link rel="stylesheet" href="./css/booking.css" />
+    <title>IT5039 - Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="second-nav">
+        <div class="second-nav-content">
+          <div class="logo-area">
+            <a href="./index.html">
+              <h1 class="second-title">
+                <span>Play</span><span>house</span><span>Theatre</span>
+              </h1>
+            </a>
+          </div>
+          <nav>
+            <div class="center-area">
+              <ul>
+                <li>
+                  <a class="a-btn-small border-l" href="./booking.html">Book Tickets</a>
+                </li>
+                <li>
+                  <a class="a-btn-small border-l" href="./index.html">What's On</a>
+                </li>
+                <li>
+                  <a class="a-btn-small border-l" href="./about.html">About</a>
+                </li>
+                <li>
+                  <a class="a-btn-small border-l" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </header>
+    <main>
+      <section class="booking-area">
+        <img id="booking-img" src="./images/playhouse-booking-banner.jpg" alt="Image of Playhouse Theatre">
+        <form action="#">
+          <div class="form-group">
+            <label for="show-select">Select a show</label>
+          <select name="show-select" id="show-select" required>
+            <option value="" selected disabled hidden>Choose show here</option>
+          </select>
+          <div class="text-area"></div>
+          </div>
+          <div class="form-group">
+            <label for="show-dates">Select a date</label>
+          <select name="show-dates" id="show-dates" required>
+            <option value="" selected disabled hidden>Choose date here</option>
+          </select>
+          </div>
+          <div class="ticket-btns">
+            <h2>Adult<span> - $25</span></h2>
+            <div class="btn-selector">
+              <input type="button" id="minus-adult" value="&minus;"><span id="amount-adult">0</span><input type="button" id="plus-adult" value="&plus;"">
+            </div>
+          </div>
+          <div class="ticket-btns">
+            <h2>Child (12 or under)<span> - $10</span></h2>
+            <div class="btn-selector">
+              <input type="button" id="minus-child" value="&minus;"><span id="amount-child">0</span><input type="button" id="plus-child" value="&plus;">
+            </div>
+          </div>
+          <div class="ticket-btns">
+            <h2>Senior<span> - $20</span></h2>
+            <div class="btn-selector">
+              <input type="button" id="minus-senior" value="&minus;"><span id="amount-senior">0</span><input type="button" id="plus-senior" value="&plus;">
+            </div>
+          </div>
+          <div class="total-area">
+            <h2>Total price:</h2>
+            <h2 id="total-price-display">$0.00</h2>
+          </div>
+          <div class="seating-box">
+            <div class="cinema-screen">Front - Cinema Screen</div>
+            <div class="seating-grid">
+              <div class="seating-area">
+                <div class="seat-row">
+                  <div class="seat">A1</div>
+                  <div class="seat">A2</div>
+                  <div class="seat">A3</div>
+                  <div class="seat">A4</div>
+                  <div class="seat">A5</div>
+                  <div class="seat">A6</div>
+                  <div class="seat">A7</div>
+                  <div class="seat">A8</div>
+                  <div class="seat">A9</div>
+                  <div class="seat">A10</div>
+                  <div class="seat">A11</div>
+                  <div class="seat">A12</div>
+                </div>
+                <div class="seat-row">
+                  <div class="seat">B1</div>
+                  <div class="seat">B2</div>
+                  <div class="seat">B3</div>
+                  <div class="seat">B4</div>
+                  <div class="seat">B5</div>
+                  <div class="seat">B6</div>
+                  <div class="seat">B7</div>
+                  <div class="seat">B8</div>
+                  <div class="seat">B9</div>
+                  <div class="seat">B10</div>
+                  <div class="seat">B11</div>
+                  <div class="seat">B12</div>
+                </div>
+                <div class="seat-row">
+                  <div class="seat">C1</div>
+                  <div class="seat">C2</div>
+                  <div class="seat">C3</div>
+                  <div class="seat">C4</div>
+                  <div class="seat">C5</div>
+                  <div class="seat">C6</div>
+                  <div class="seat">C7</div>
+                  <div class="seat">C8</div>
+                  <div class="seat">C9</div>
+                  <div class="seat">C10</div>
+                  <div class="seat">C11</div>
+                  <div class="seat">C12</div>
+                </div>
+                <div class="seat-row">
+                  <div class="seat">D1</div>
+                  <div class="seat">D2</div>
+                  <div class="seat">D3</div>
+                  <div class="seat">D4</div>
+                  <div class="seat">D5</div>
+                  <div class="seat">D6</div>
+                  <div class="seat">D7</div>
+                  <div class="seat">D8</div>
+                  <div class="seat">D9</div>
+                  <div class="seat">D10</div>
+                  <div class="seat">D11</div>
+                  <div class="seat">D12</div>
+                </div>
+                <div class="seat-row">
+                  <div class="seat">E1</div>
+                  <div class="seat">E2</div>
+                  <div class="seat">E3</div>
+                  <div class="seat">E4</div>
+                  <div class="seat">E5</div>
+                  <div class="seat">E6</div>
+                  <div class="seat">E7</div>
+                  <div class="seat">E8</div>
+                  <div class="seat">E9</div>
+                  <div class="seat">E10</div>
+                  <div class="seat">E11</div>
+                  <div class="seat">E12</div>
+                </div>
+                <div class="seat-row">
+                  <div class="seat">F1</div>
+                  <div class="seat">F2</div>
+                  <div class="seat">F3</div>
+                  <div class="seat">F4</div>
+                  <div class="seat">F5</div>
+                  <div class="seat">F6</div>
+                  <div class="seat">F7</div>
+                  <div class="seat">F8</div>
+                  <div class="seat">F9</div>
+                  <div class="seat">F10</div>
+                  <div class="seat">F11</div>
+                  <div class="seat">F12</div>
+                </div>
+                <div class="seat-row">
+                  <div class="seat">G1</div>
+                  <div class="seat">G2</div>
+                  <div class="seat">G3</div>
+                  <div class="seat">G4</div>
+                  <div class="seat">G5</div>
+                  <div class="seat">G6</div>
+                  <div class="seat">G7</div>
+                  <div class="seat">G8</div>
+                  <div class="seat">G9</div>
+                  <div class="seat">G10</div>
+                  <div class="seat">G11</div>
+                  <div class="seat">G12</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="choose-seat-request">
+            <h2 id="choose-seat-request-num"></h2>
+            <h2 id="error-msg"></h2>
+          </div>
+          <div id="submit-area">
+          <input type="submit" id="submit-btn" value="Proceed to checkout"> 
+          </div>
+        </form>
+      </section>
+      <section id="checkout" class="hide">
+        <h2>Checkout details:</h2>
+        <div class="checkout-detail">
+          <h3>Show:</h3>
+          <h4 id="checkout-show"></h4>
+        </div>
+        <div class="checkout-detail">
+          <h3>Date:</h3>
+          <h4 id="checkout-date"></h4>
+        </div>
+        <div class="checkout-detail">
+          <h3>Tickets:</h3>
+          <h4 id="checkout-tickets"></h4>
+        </div>
+        <div class="checkout-detail">
+          <h3>Total:</h3>
+          <h4 id="checkout-price"></h4>
+        </div>
+        <div class="checkout-btn-area">
+          <button id="checkout-cancel-btn" class="checkout-btn cancel-btn">Cancel</button>
+          <button id="checkout-conf-btn" class="checkout-btn">Checkout</button>
+        </div>
+      </section>
+      <div id="overlay"></div>
+    </main>
+      <footer>
+        <footer>
+          <div class="left-links">
+            <a href="https://www.whitecliffe.ac.nz/privacy-policy" target="_blank">Privacy Policy</a>
+            <h4>&copy; J.Hertzke - 20210843</h4>
+          </div>
+          <div class="logo">
+            <a href="./index.html">
+              <h2 class="title">
+                <span>Play</span><span>house</span><span>Theatre</span>
+              </h2>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://facebook.com" target="blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com" target="blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://pinterest.nz" target="blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </div>
+      </footer>
+      <script src="./js/booking.js"></script>
+  </body>
+</html>
